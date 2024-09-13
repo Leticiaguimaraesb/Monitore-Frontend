@@ -1,4 +1,4 @@
-# Frontend Rebel Alliance - Dashboard Agropecuário 👨‍🌾
+# Frontend Dashboard Monitore Agro - Squad Rebel Alliance  👨‍🌾
 ### Sumário 📇
 :small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 

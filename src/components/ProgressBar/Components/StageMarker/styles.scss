@@ -1,0 +1,102 @@
+@import "../../../../utils/variables";
+
+.StageMarkerContainer {
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  #rightActive {
+    position: absolute;
+    top: 14px;
+    left: 39px;
+    height: 12px;
+    width: 2px;
+    background-color: $monitore-green-progress-bar;
+  }
+
+  #rightInactive {
+    position: absolute;
+    top: 14px;
+    left: 39px;
+    height: 12px;
+    width: 2px;
+    background-color: $monitore-light-green;
+  }
+
+  #leftActive {
+    position: absolute;
+    top: 14px;
+    left: -1px;
+    height: 12px;
+    width: 3px;
+    background-color: $monitore-green-progress-bar;
+  }
+
+  #leftInactive {
+    position: absolute;
+    top: 14px;
+    left: -1px;
+    height: 12px;
+    width: 3px;
+    background-color: $monitore-light-green;
+  }
+}
+.StageMarkerActive {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $monitore-white;
+  line-height: 10px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: $monitore-green-progress-bar;
+}
+.StageMarkerInactive {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $monitore-green-progress-bar;
+  line-height: 10px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: $monitore-light-green;
+}
+
+.StageMarkerInitalActive {
+  @extend .StageMarkerActive;
+}
+.StageMarkerInitalInactive {
+  @extend .StageMarkerInactive;
+}
+.StageMarkerInitalTransition {
+  @extend .StageMarkerActive;
+}
+.StageMarkerMidActive {
+  @extend .StageMarkerActive;
+}
+
+.StageMarkerMidInactive {
+  @extend .StageMarkerInactive;
+}
+
+.StageMarkerMidTransition {
+  @extend .StageMarkerActive;
+}
+
+.StageMarkerEndActive {
+  @extend .StageMarkerActive;
+}
+
+.StageMarkerEndInactive {
+  @extend .StageMarkerInactive;
+}

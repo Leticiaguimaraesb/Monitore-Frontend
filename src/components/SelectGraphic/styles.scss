@@ -1,0 +1,43 @@
+@import "./../../utils/variables";
+
+.containerSelectGraphic {
+  width: 100%;
+  height: 581px;
+  padding: 22px 16px;
+  background-color: $monitore-graphic-background;
+  border-radius: 8px;
+}
+
+.containerButtonsSelectGraphic {
+  width: 187px;
+  padding: 16px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: $monitore-white;
+  border-radius: 6px;
+  margin: 10px 0px 15px 16px;
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #959595;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .selectedTemp {
+    color: #eca900;
+    font-weight: 700;
+  }
+  .selectedRain {
+    color: #004cbd;
+    font-weight: 700;
+  }
+  .selectedWind {
+    color: #027a00;
+    font-weight: 700;
+  }
+}

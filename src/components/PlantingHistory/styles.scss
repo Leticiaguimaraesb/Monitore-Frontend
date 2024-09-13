@@ -1,0 +1,15 @@
+@import "./../../utils/variables";
+
+.plantingHistoryContainer {
+  width: 672px;
+  // height: 100vh;
+  padding: 24px;
+  background-color: $monitore-defaultBackground;
+  border-radius: 8px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}

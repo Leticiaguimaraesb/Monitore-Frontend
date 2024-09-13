@@ -1,0 +1,36 @@
+@import "./../../utils/variables";
+
+.dataTableRowContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+
+  tr {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    border-bottom: 1px solid $monitore-boundary-line;
+    padding: 4.54px 0px 14.79px 0px;
+  }
+
+  #title {
+    width: 62.327123468426%;
+    font-size: 24px;
+    font-weight: 700px;
+    font-style: normal;
+    line-height: normal;
+    color: $monitore-gray-text;
+  }
+
+  #text {
+    width: 37.6728765316%;
+    font-size: 18px;
+    font-weight: 400px;
+    font-style: normal;
+    line-height: normal;
+    color: $monitore-gray-text;
+    word-wrap: break-word;
+  }
+}

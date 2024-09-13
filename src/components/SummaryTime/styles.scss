@@ -1,0 +1,185 @@
+@import "./../../utils/variables";
+
+.containerSummaryTime {
+  background: $monitore-green;
+  width: 100%;
+  height: 103px;
+  border-radius: 8px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  &:hover {
+    background: $monitore-green-progress-bar;
+  }
+}
+
+.containerDateAndLocal {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  time {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98%;
+    color: $monitore-white;
+  }
+  address {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98%;
+    color: $monitore-white;
+    display: flex;
+    gap: 4px;
+  }
+}
+
+.containerWeather {
+  display: flex;
+  gap: 8px;
+}
+
+.containerHourAndTemp {
+  height: 81px;
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  span {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98%;
+    color: $monitore-white;
+  }
+}
+
+.temperature {
+  position: relative;
+  display: inline-block;
+
+  span {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98%;
+    color: $monitore-white;
+  }
+  .celsiusSymbol {
+    position: absolute;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98%;
+    color: $monitore-white;
+  }
+}
+
+.weatherSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  li:first-child {
+    text-transform: capitalize;
+  }
+  li {
+    list-style: none;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $monitore-white;
+  }
+}
+
+.background {
+  border-radius: 8px;
+  background-image: url(./../../assets/backgroundWeatherBlackAndWhite.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+.containerWeatherPageClimate {
+  border-radius: 8px;
+  background-color: #5e9549d3;
+  width: 100%;
+  height: 206px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerInformationTime {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  span {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98%;
+    color: $monitore-white;
+  }
+}
+
+.containerDateAndLocalPageClimate {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  time {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98%;
+    color: $monitore-white;
+  }
+  address {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98%;
+    color: $monitore-white;
+    display: flex;
+    gap: 4px;
+  }
+}
+.temperaturePageClimate {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98%;
+    color: $monitore-white;
+  }
+  sup {
+    position: absolute;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98%;
+    color: $monitore-white;
+  }
+  p {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $monitore-white;
+  }
+
+  img{
+    width: 120px;
+    height: 120px;
+  }
+}

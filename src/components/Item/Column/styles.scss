@@ -1,0 +1,17 @@
+@import "./../../../utils/variables";
+
+.columnContainer {
+    h3 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        color: $monitore-item-column-title;
+        margin-bottom: 4px;
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 16px; 
+        color: $monitore-black-title;
+    }
+}

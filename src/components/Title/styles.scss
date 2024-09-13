@@ -1,0 +1,46 @@
+@import "./../../utils/variables";
+
+.containerTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.containerButtonAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  img {
+    width: 11.234px;
+    height: 18.193px;
+    transform: translateX(-1px);
+  }
+
+  h1 {
+    font-style: normal;
+    line-height: normal;
+    white-space: nowrap;
+    color: $monitore-black-title;
+  }
+}
+
+.containerArrow {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #a05f53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: $monitore-brown-hover;
+  }
+}
+
+.lineTitle {
+  border: 1px solid $monitore-brown;
+  border-radius: 8px;
+  width: 100%;
+}

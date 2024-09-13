@@ -1,0 +1,78 @@
+@import "./../../utils/variables";
+
+.containerEditCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+}
+
+.containerInputEditCard {
+  width: 177px;
+  height: 70px;
+  .TextInputContainer {
+    display: flex;
+    gap: 6.88px;
+  }
+}
+
+.inputEditCard {
+  width: 177px;
+  height: 46.118px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 11.9px;
+  color: $monitore-button-black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  &:focus {
+    outline: 2px solid $textInput-focus-color;
+  }
+  &::placeholder {
+    color: $textInput-placeholder-color;
+  }
+  &:hover {
+    &::placeholder {
+      color: $textInput-placeholder-hover-color;
+    }
+  }
+}
+
+.containerDropdownEditCard {
+  width: 177px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 6.88px;
+  background-color: none;
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: $textInput-placeholder-color;
+  }
+  span {
+    color: $monitore-button-black;
+  }
+}
+
+.dropdownCustomize {
+  border: none;
+  outline: none;
+}
+
+.containerButtonEditCard {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 177px;
+  height: 70px;
+  button {
+    width: 177px;
+    height: 46.118px;
+  }
+}

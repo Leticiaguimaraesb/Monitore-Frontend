@@ -1,0 +1,48 @@
+@import "../../utils/variables";
+
+.containerPagePLot {
+
+    .containerPlot {
+        margin-left: 235px;
+        padding: 0px 32px 48px;
+
+        .plotTitle {
+            z-index: 1;
+            position: fixed;
+            width: calc(100% - 299px);
+            height: 96px;
+
+            display: flex;
+            align-items: flex-end;
+
+            background-color: white;
+        }
+
+        .plotInfos {
+            .emphasis {
+                position: relative;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                z-index: 1;
+            }
+
+            padding-top: 150px;
+    
+            .plotData {
+                margin-bottom: 32px;
+            }
+    
+            .plotHistorys {
+                display: flex;
+                gap: 32px;
+    
+                .harvestHistory {
+                    flex: 1.2;
+                }
+                
+                .plantingHistory {
+                    flex: 2;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "./../../utils/variables";
+
+.sideBar {
+  position: fixed;
+  width: 235px;
+  height: 100vh;
+  border-radius: 0px 16px 16px 0px;
+  background: $monitore-soft-black;
+}
+
+.containerLogo {
+  height: 154px;
+  padding: 48px 37px 48px 38px;
+  border-radius: 0px 16px 0px 0px;
+  background: $monitore-green;
+}
+
+.containerButtons {
+  height: calc(100% - 154px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 24px;
+}
+
+.containerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  li {
+    list-style: none;
+  }
+}
+
+.linkActive {
+  background: $monitore-button-black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.linkNoActive {
+  background: none;
+  text-decoration: none;
+  &:hover {
+    background: $monitore-button-black-hover;
+    border-radius: 8px;
+  }
+}
+
+.containerExit {
+  &:hover {
+    background: $monitore-button-black-hover;
+    border-radius: 8px;
+  }
+}

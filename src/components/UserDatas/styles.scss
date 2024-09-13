@@ -1,0 +1,13 @@
+@import "./../../utils/variables";
+
+.userDataContainer {
+  width: 100%;
+  background-color: $textInput-defaultBorder-color;
+  border-radius: 8px;
+  display: flex;
+
+  table {
+    width: 100%;
+    padding: 40px 40px 143.97px 40px;
+  }
+}

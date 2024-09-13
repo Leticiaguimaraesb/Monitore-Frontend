@@ -1,0 +1,84 @@
+@import "./../../utils/variables";
+
+.blurry {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: brightness(50%) blur(5px);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+.emphasisHarvest {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+
+.harvestHistoryContainer {
+    width: 437px;
+    min-height: 540px;
+    padding: 24px;
+    background-color: $monitore-defaultBackground;
+    border-radius: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .harvestHistoryContent {
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .harvestHistoryItem {
+            gap: 25%;
+        }
+
+        .containerAddNewHarvest {
+            padding-top: 40px;
+            display: flex;
+            gap: 10%;
+
+            .inputNewHarvest {
+                height: 46px;
+                padding: 12px 11px;
+
+                border-radius: 8px;
+                border: none;
+            }
+
+            .TextInputContainer {
+                width: 45%;
+            }
+        }
+    }
+
+    .buttonAddHarvest {
+        margin-top: 50px;
+        align-self: flex-end;
+    }
+}
+
+.addNewHarvestContainer {
+    display: block;
+    
+    .harvestHistoryContent {
+        min-height: 492px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .buttonSaveHarvest {
+            align-self: flex-end;
+        }
+
+        .containerAddNewHarvest {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}

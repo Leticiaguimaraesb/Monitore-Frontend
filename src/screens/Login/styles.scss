@@ -1,0 +1,56 @@
+@import "./../../utils/variables";
+
+.LoginPage {
+  height: 100vh;
+  background-color: black;
+  background-image: url("../../assets/loginPage/backgroundLogin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  .LoginContainer {
+    width: 30%;
+    background-color: $monitore-defaultBackground;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+    header {
+      padding: 15px;
+      display: flex;
+      width: 100%;
+      height: 25%;
+      background-color: $monitore-black-title;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px 8px 0 0;
+    }
+
+    button {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .DataContainer {
+      height: 75%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 9% 7%;
+
+      h1 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+      }
+    }
+  }
+}

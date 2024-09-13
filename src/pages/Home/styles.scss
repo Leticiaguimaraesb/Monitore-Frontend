@@ -1,0 +1,51 @@
+@import "./../../utils/variables";
+
+.pageHomeContainer {
+  display: flex;
+  .homeDataContainer {
+    margin-left: 235px;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+
+    .searchContainer {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .filterContainer {
+      display: flex;
+      gap: 32px;
+    }
+  }
+}
+
+.containerWelcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  img {
+    width: 212.668px;
+    height: 228.627px;
+  }
+  h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $monitore-text-h1;
+  }
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $customCheckbox-label-color;
+    margin-bottom: 32px;
+  }
+}
